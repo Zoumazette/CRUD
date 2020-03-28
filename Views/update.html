@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mon CRUD</title>
+
+</head>
+<body>
+
+<header>
+<h1>Mon CRUD</h1>
+</header>
+
+<nav>
+<ul>
+    <li><a href="create.html">Create</a></li>
+    <li><a href="read.html">Read</a></li>
+    <li><a href="update.html">Update</a></li>
+    <li><a href="delete.html">Delete</a></li>
+</ul>
+
+
+<main>
+    <form method="post" action="/Controllers/update_ctrl.php">
+        <label for="pseudo">Votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" />
+        <label for="mdp">Votre mot de passe</label> : <input type="password" name="mdp" id="mdp" />
+        <label for="mdp">Votre nouveau mot de passe</label> : <input type="password" name="mdp" id="mdp" />
+        <label for="description">Votre nouvelle description</label> : <textarea name="description" id="description"></textarea>
+        <input type="submit" value="Mettre à jour" />
+    </form>
+    
+</main>
+
+<footer>
+<p>Et les Shadoks pompaient, pompaient, pompaient...</p>
+</footer>
+</body>
+</html>
