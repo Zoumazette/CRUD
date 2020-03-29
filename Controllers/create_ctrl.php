@@ -1,5 +1,5 @@
 <!-- enregistre les infos du formulaire dans la base -->
-
+<?php
 $pseudo = htmlspecialchar($_POST['pseudo']);
 $mdp = htmlspecialchar($_POST['mdp']);
 $story = htmlspecialchar($_POST['story']);
@@ -22,7 +22,7 @@ $insertion->bindParam(1, $pseudo);
 $insertion->bindParam(2, $mdp);
 $insertion->bindParam(3, $story);
 $insertion->execute();
-
+?>
 
 
 
